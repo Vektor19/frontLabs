@@ -1,0 +1,321 @@
+/* Анулювання стилів */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active{
+    outline: none;
+}
+a:focus, a:active{
+    outline: none;
+}
+
+nav, footer, header, aside{
+    display: block;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; margin: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6{font-size:inherit; font-weight: 400;}
+
+/* -------------------- */
+
+header{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: .15em;
+    width: 100%;
+    height: fit-content;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-left:2em;
+    padding-right:4em;
+}
+header a:visited{
+    color: white;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul li{
+    padding: 2em 3em;
+}
+.hover_black:hover{
+    background-color: #1c1c1c;
+    color: white;
+    cursor:pointer
+}
+.transition{
+    transition: ease-in-out .2s;
+}
+/* .logo-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container h1{
+    margin-left: 1em;
+}
+.section_container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Serif", serif;
+    font-weight: 400; 
+    font-size: 1.5em;
+}
+.introduction{
+    max-height: 90vh;
+    display: flex;
+}
+.introduction h2{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+.introduction img{
+    width: 100%;
+}
+.description, .table_container, aside{
+    margin: 2em 3em;
+}
+.description{
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.2;
+}
+.description p{
+    margin-bottom: 0.7em;
+    border: solid 0.2em;
+    border-radius: .5em;
+    padding: .5em;
+    box-shadow: .4em .4em 2px rgba(0,0,0,0.45);
+}
+.description ul{
+    margin: 0 3em;
+    text-indent: 1em;
+}
+.description ul li{
+    list-style: outside;
+}
+
+.table_container table{
+    width: 100%;
+}
+.table_container table th{
+    background-color: #363636;
+    color: white;
+    padding: .5em;
+    border: solid 0.2em #363636;
+    border-radius: .1em;
+}
+.table_container table td{
+    padding: .5em;
+    border: solid 0.1em #363636;
+    border-radius: .3em;
+}
+
+
+.table_container + aside ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+.table_container + aside ul a{
+    border: solid 0.2em #000;
+    padding: .5em;
+    border-radius: .5em;
+    display: inline-block;
+    min-width: 10em;
+    text-align: center;
+}
+#main_section h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+aside a:visited{
+    color: #000;
+}
+.scientific_themes_container{
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: hidden;
+    padding-bottom: 4em;
+    /* grid-template: auto / 1fr 1fr; */
+}
+#scientific_themes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+#scientific_themes h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.theme_item{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* padding:2em; */
+    border: solid 0.2em #000;
+    border-radius: .5em;
+    box-shadow: .4em .4em 2px rgba(0,0,0,0.45);
+    margin-left: 3em;
+    margin-top: 2em;
+    padding: 2em;
+    transition: ease-in-out .2s;
+}
+.theme_item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.theme_item img{
+    height: 50vh;
+    width: 50vh;
+    
+}
+.theme_item h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0.3em;
+}
+.theme_item .info-container{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    overflow-y: hidden;
+}
+.theme_item .info-container ul{
+    margin: 1em 0 0 1em;
+    display: flex;
+    flex-flow: column;
+}
+.theme_item ul li{
+    font-size: 1em;
+    line-height: 1.2;
+    list-style: outside;
+}
+.theme_item p{
+    margin-top: 0.5em;
+}
+
+#feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2em;
+    align-items: center;
+}
+#feedback form{
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(4,1fr);
+    width: 50vw;
+    border: solid 0.2em #000;
+    border-radius: .5em;
+    padding: 2em;
+}
+.input_container{
+    display: flex;
+    flex-direction: column;
+}
+.input_container input{
+    padding: .5em;
+    border: solid 0.1em #000;
+    border-radius: .2em;
+}
+.input_container.surname{
+    grid-column: 1/span 2;
+    margin-right: 1em;
+}
+.input_container.name{
+    grid-column: 3/span 2;
+    margin-left: 1em;
+}
+.input_container.email{
+    grid-column: 1/span 2;
+    margin-right: 1em;
+}
+.input_container.age{
+    grid-column: 3/span 2;
+    margin-left: 1em;
+}
+.input_container.learning{
+    grid-column: 1/span 4;
+}
+.input_container.learning>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input_container.learning .radio_container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    /* border: solid 0.1em #000; */
+    /* border-radius: .2em; */
+    padding-left: 0.5em;
+}
+.input_container.learning .radio_container label{
+    margin-left: 0.5em;
+    border: solid 0.1em #000;
+    border-radius: .2em;
+    padding: 0.5em;
+}
+.input_container.purpose{
+    grid-column: 1/span 4;
+}
+.input_container.purpose select{
+    font-family: "Noto Serif", serif;
+    font-weight: 400; 
+    font-size: 1em;
+    padding: .5em;
+    border: solid 0.1em #000;
+    border-radius: .2em;
+}
