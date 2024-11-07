@@ -107,9 +107,9 @@ document.addEventListener('DOMContentLoaded', async() => {
             const currentMarginTop = parseFloat(window.getComputedStyle(h3).marginTop);
             const imgHeight = parseFloat(window.getComputedStyle(img).height);
 
-            const gap = h3.getBoundingClientRect().top - (img.getBoundingClientRect().top + imgHeight);
+            // const gap = h3.getBoundingClientRect().top - (img.getBoundingClientRect().top + imgHeight);
             if (e.target.marginH3 === undefined)
-                e.target.marginH3 = currentMarginTop + imgHeight + gap;
+                e.target.marginH3 = currentMarginTop + imgHeight;
             if (e.target.state === 'up') {
                 
                 infoContainer.style.transform = 'translateY(100%)';
@@ -121,12 +121,13 @@ document.addEventListener('DOMContentLoaded', async() => {
                     setTimeout(() => {
                         h3.style.transition = '0.5s ease-in';
                         infoContainer.style.transition = 'transform 0.5s ease-in-out';
+                        h3.style.marginTop = '2em';
                     }, 100);
 
                     setTimeout(() => {
                         infoContainer.style.display = 'flex';
-                        h3.style.marginTop = '0';
                         infoContainer.style.transform = 'translateY(0)';
+                        infoContainer.style.marginTop = '2em';
                     }, 100);
                     
                 }, 200);
@@ -137,7 +138,7 @@ document.addEventListener('DOMContentLoaded', async() => {
             } else {
                 
                 h3.style.transform=`translateY(${e.target.marginH3}px)`;
-                infoContainer.style.transform = 'translateY(100%)';
+                infoContainer.style.transform = 'translateY(150%)';
                 setTimeout(() => {
                     img.style.display = 'block';
                     setTimeout(() => {
@@ -146,7 +147,7 @@ document.addEventListener('DOMContentLoaded', async() => {
                     h3.style.transition = '';
                     infoContainer.style.transition = '';
                     infoContainer.style.display = 'none';
-                    h3.style.marginTop = '0.3em';
+                    h3.style.marginTop = '1.5em';
                     h3.style.transform = 'translateY(0)';
                 }, 500);
                 

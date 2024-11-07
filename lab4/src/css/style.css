@@ -224,7 +224,7 @@ aside a:visited{
 .theme_item .theme_item_data{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    /* justify-content:center; */
     height: 100%;
     overflow: hidden;
 }
@@ -259,14 +259,14 @@ aside a:visited{
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
-    margin-top: 0.3em;
+    margin-top: 1.5em;
     /* transition: 0.4s ease; */
 }
 .theme_item .info-container{
     flex-direction: column;
     min-height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     overflow-y: hidden;
     transition: transform 0.5s ease; /*new*/
 }
