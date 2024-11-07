@@ -64,6 +64,9 @@ header{
     position: fixed;
     z-index: 1000;
 }
+header a{
+    color: white;
+}
 header a:visited{
     color: white;
 }

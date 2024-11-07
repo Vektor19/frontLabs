@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "title": "ООП",
+        "author": "Іваненко О.О.",
+        "taskType": ["Практичні завдання", "Тестові питання"],
+        "usersToday": 125,
+        "usersYesterday": 110,
+        "learnDuration": {"hours": 2, "minutes": 30},
+        "imagePath": "https://miro.medium.com/v2/resize:fit:993/1*SC9EZRqtAx6W_LeNf3j4Ew.jpeg",
+        "lessonNames": ["Вступ до ООП", "Класи та об'єкти", "Спадкування та поліморфізм", "Інкапсуляція", "Абстракція"]
+    },
+    {
+        "id": 2,
+        "title": "Колекції та робота з масивами",
+        "author": "Петренко П.П.",
+        "taskType": ["Практичні завдання", "Проєкт"],
+        "usersToday": 98,
+        "usersYesterday": 105,
+        "learnDuration": {"hours": 1, "minutes": 45},
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7gBn2ikmSYnIjoC0nrYx1tEApDxFreXk9g&s",
+        "lessonNames": ["Масиви в C#", "Списки та словники", "Робота з колекціями", "Ітератори", "Пошук та сортування в колекціях"]
+    },
+    {
+        "id": 3,
+        "title": "Асинхронність",
+        "author": "Сидоренко С.С.",
+        "taskType": ["Тестові питання", "Практичні завдання"],
+        "usersToday": 87,
+        "usersYesterday": 92,
+        "learnDuration": {"hours": 2, "minutes": 10},
+        "imagePath": "https://miro.medium.com/v2/resize:fit:817/1*GtOeDwXubvwJMZpdaASW1A.jpeg",
+        "lessonNames": ["Основи async та await", "Обробка асинхронних операцій", "Практичні приклади асинхронності", "Таймери та завдання", "Асинхронне програмування в UI"]
+    },
+    {
+        "id": 4,
+        "title": "LINQ",
+        "author": "Коваленко К.К.",
+        "taskType": ["Практичні завдання", "Тестові питання"],
+        "usersToday": 78,
+        "usersYesterday": 80,
+        "learnDuration": {"hours": 1, "minutes": 30},
+        "imagePath": "https://ucarecdn.com/a510206c-4458-4ef5-b706-00f65ebfee51/-/preview/-/enhance/12/-/sharp/14/-/resize/1050/",
+        "lessonNames": ["Основи LINQ", "Запити LINQ", "Обробка даних за допомогою LINQ", "Групування та агрегація", "Побудова складних запитів"]
+    },
+    {
+        "id": 5,
+        "title": "Обробка виключень",
+        "author": "Мельник М.М.",
+        "taskType": ["Практичні завдання", "Проєкт"],
+        "usersToday": 65,
+        "usersYesterday": 70,
+        "learnDuration": {"hours": 1, "minutes": 50},
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0oR3iu5vpVn0GjQ01t8vwMrjg8z205hwaA&s",
+        "lessonNames": ["Основи виключень", "Створення власних виключень", "Логування та обробка помилок", "Робота з блоком finally", "Використання try-catch"]
+    },
+    {
+        "id": 6,
+        "title": "Делегати та події",
+        "author": "Дорошенко Д.Д.",
+        "taskType": ["Практичні завдання", "Проєкт"],
+        "usersToday": 58,
+        "usersYesterday": 61,
+        "learnDuration": {"hours": 1, "minutes": 40},
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5LQ0Cm_8msSugO_KsUwNBTm4AZyFVWTVOg&s",
+        "lessonNames": ["Основи делегатів", "Анонімні методи та лямбда-вирази", "Події в C#", "Мультикаст делегати", "Використання подій"]
+    },
+    {
+        "id": 7,
+        "title": "Паралельне програмування",
+        "author": "Романенко Р.Р.",
+        "taskType": ["Практичні завдання", "Тестові питання"],
+        "usersToday": 73,
+        "usersYesterday": 69,
+        "learnDuration": {"hours": 2, "minutes": 0},
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrjjNGk8sx8-zNn_Rudpak-vrDjeHeirjpg&s",
+        "lessonNames": ["Основи багатопоточності", "Паралельне виконання", "Управління потоками", "Ресурси та блокування", "Асинхронні колекції"]
+    },
+    {
+        "id": 8,
+        "title": "Інтерфейси та абстрактні класи",
+        "author": "Зеленко З.З.",
+        "taskType": ["Практичні завдання", "Проєкт"],
+        "usersToday": 83,
+        "usersYesterday": 89,
+        "learnDuration": {"hours": 1, "minutes": 55},
+        "imagePath": "https://example.com/images/interface_classes.jpg",
+        "lessonNames": ["Основи інтерфейсів", "Реалізація інтерфейсів", "Абстрактні класи", "Застосування поліморфізму", "Інтерфейси vs абстрактні класи"]
+    },
+    {
+        "id": 9,
+        "title": "Рефлексія та динамічні типи",
+        "author": "Іванченко І.І.",
+        "taskType": ["Практичні завдання", "Тестові питання"],
+        "usersToday": 46,
+        "usersYesterday": 52,
+        "learnDuration": {"hours": 1, "minutes": 35},
+        "imagePath": "https://example.com/images/reflection_dynamic_types.jpg",
+        "lessonNames": ["Вступ до рефлексії", "Доступ до типів під час виконання", "Використання динамічних типів", "Виклик методів динамічно", "Застосування рефлексії"]
+    },
+    {
+        "id": 10,
+        "title": "Потокобезпека та конкурентність",
+        "author": "Шевченко Ш.Ш.",
+        "taskType": ["Практичні завдання", "Проєкт"],
+        "usersToday": 61,
+        "usersYesterday": 57,
+        "learnDuration": {"hours": 2, "minutes": 15},
+        "imagePath": "https://example.com/images/thread_safety_concurrency.jpg",
+        "lessonNames": ["Основи потокобезпеки", "Синхронізація потоків", "Конкурентні колекції", "Управління м'ютексами", "Блокування та черги"]
+    }
+]

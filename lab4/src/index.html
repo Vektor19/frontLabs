@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="module" src="js/script.js"></script>
     <title>SharpShark</title>
 </head>
 <body>
@@ -142,90 +143,7 @@
         <section id="scientific_themes" class="section_container">
             <h2>Навчальні теми</h2>
             <div class="scientific_themes_container">
-                <div class="theme_item">
-                    <img src="https://miro.medium.com/v2/resize:fit:993/1*SC9EZRqtAx6W_LeNf3j4Ew.jpeg" alt="Зображення OOP">
-                    <div class="info-container">
-                        <h3>ООП</h3>
-                        <ul>
-                            <li>Вступ до ООП</li>
-                            <li>Класи та об'єкти</li>
-                            <li>Спадкування та поліморфізм</li>
-                        </ul>
-                        <p>Тип завдань: Практичні завдання, Тестові питання</p>
-                    </div>
-                </div>
-                <div class="theme_item item2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7gBn2ikmSYnIjoC0nrYx1tEApDxFreXk9g&s" alt="Зображення Колекцій">
-                    <div class="info-container">
-                        <h3>Колекції та робота з масивами</h3>
-                        <ul>
-                            <li>Масиви в C#</li>
-                            <li>Списки та словники</li>
-                            <li>Робота з колекціями</li>
-                        </ul>
-                        <p>Тип завдань: Практичні завдання, Проєкт</p>
-                    </div>
-                </div>
-                <div class="theme_item">
-                    <img src="https://miro.medium.com/v2/resize:fit:817/1*GtOeDwXubvwJMZpdaASW1A.jpeg" alt="Зображення Асинхронного програмування">
-                    <div class="info-container">
-                        <h3>Асинхронність</h3>
-                        <ul>
-                            <li>Основи async та await</li>
-                            <li>Обробка асинхронних операцій</li>
-                            <li>Практичні приклади асинхронності</li>
-                        </ul>
-                        <p>Тип завдань: Тестові питання, Практичні завдання</p>
-                    </div>
-                </div>
-                <div class="theme_item">
-                    <img src="https://ucarecdn.com/a510206c-4458-4ef5-b706-00f65ebfee51/-/preview/-/enhance/12/-/sharp/14/-/resize/1050/" alt="Зображення LINQ">
-                    <div class="info-container">
-                        <h3>LINQ</h3>
-                        <ul>
-                            <li>Основи LINQ</li>
-                            <li>Запити LINQ</li>
-                            <li>Обробка даних за допомогою LINQ</li>
-                        </ul>
-                        <p>Тип завдань: Практичні завдання, Тестові питання</p>
-                    </div>
-                </div>
-                <div class="theme_item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0oR3iu5vpVn0GjQ01t8vwMrjg8z205hwaA&s" alt="Зображення Обробки виключень">
-                    <div class="info-container">
-                        <h3>Обробка виключень</h3>
-                        <ul>
-                            <li>Основи виключень</li>
-                            <li>Створення власних виключень</li>
-                            <li>Логування та обробка помилок</li>
-                        </ul>
-                        <p>Тип завдань: Практичні завдання, Проєкт</p>
-                    </div>
-                </div>
-                <div class="theme_item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG5LQ0Cm_8msSugO_KsUwNBTm4AZyFVWTVOg&s" alt="Зображення Делегатів">
-                    <div class="info-container">
-                        <h3>Делегати та події</h3>
-                        <ul>
-                            <li>Основи делегатів</li>
-                            <li>Анонімні методи та лямбда-вирази</li>
-                            <li>Події в C#</li>
-                        </ul>
-                        <p>Тип завдань: Практичні завдання, Проєкт</p>
-                    </div>
-                </div>
-                <div class="theme_item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrjjNGk8sx8-zNn_Rudpak-vrDjeHeirjpg&s" height="100px" alt="Зображення Паралельного програмування">
-                    <div class="info-container">
-                        <h3>Паралельне програмування</h3>
-                        <ul>
-                            <li>Основи багатопоточності</li>
-                            <li>Паралельне виконання</li>
-                            <li>Управління потоками</li>
-                        </ul>
-                        <p>Тип завдань: Практичні завдання, Тестові питання</p>
-                    </div>
-                </div>
+                
             </div>
         </section>
         <section id="feedback" class="section_container">
@@ -286,7 +204,7 @@
                         <input type="checkbox" id="consent" name="consent" required>
                         <label for="consent">Я погоджуюсь на обробку моїх персональних даних</label>
                     </div>
-                    <button class="submit_button hover_black" type="submit">Відправити</button>
+                    <button class="submit_button hover_black" id="button">Відправити</button>
                 </form>
             </div>
         </section>
