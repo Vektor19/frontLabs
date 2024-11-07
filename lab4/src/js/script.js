@@ -53,12 +53,13 @@ document.addEventListener('DOMContentLoaded', async() => {
     themes.forEach(theme => {
         const themeElement = document.createElement('div');
         themeElement.classList.add('theme_item');
-        
+        const themeElementData = document.createElement('div');
         const img = document.createElement('img');
         img.src = theme.imagePath;
         img.alt = theme.title;
-        themeElement.appendChild(img);
-        themeElement.innerHTML += `
+        themeElementData.appendChild(img);
+        themeElementData.classList.add('theme_item_data');
+        themeElementData.innerHTML += `
             <h3>${theme.title}</h3>`;
         const infoContainer = document.createElement('div');
         infoContainer.classList.add('info-container');
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async() => {
         infoContainer.innerHTML = `
             <ul>${theme.lessonNames.map(lesson => `<li>${lesson}</li>`).join('')}</ul>
             <p>Тип завдань: ${theme.taskType.join(', ')}</p>`;
-        themeElement.appendChild(infoContainer);
+        themeElementData.appendChild(infoContainer);
         const div = document.createElement('div');
         div.classList.add('more_item');
         const p_more = document.createElement('p');
@@ -154,6 +155,7 @@ document.addEventListener('DOMContentLoaded', async() => {
             }
         });
         div.appendChild(p_more);
+        themeElement.appendChild(themeElementData);
         themeElement.appendChild(div);
 
         

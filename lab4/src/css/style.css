@@ -219,14 +219,19 @@ aside a:visited{
     padding-bottom: 0px;
     
     justify-content: space-between;
-    overflow-y: hidden;
     
+}
+.theme_item .theme_item_data{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
 }
 .more_item{
     display: block;
     width: 100%;
     text-align: center;
-    position: static;
+    position: sticky;
     justify-self: end;
     width: 100%;
     align-self: center;
