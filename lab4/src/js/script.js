@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', async() => {
                 
             } else {
                 
-                h3.style.transform=`translateY(${e.target.marginH3}px)`;
+                h3.style.transform=`translateY(${e.target.marginH3-parseFloat(window.getComputedStyle(h3).marginTop)}px)`;
                 infoContainer.style.transform = 'translateY(150%)';
                 setTimeout(() => {
                     img.style.display = 'block';
